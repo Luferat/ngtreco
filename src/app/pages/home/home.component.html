@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div *ngIf="articles">
+
+  <ul>
+
+    <li *ngFor="let article of articles">
+      <a routerLink="/view/{{article.id}}">
+        {{article.title}}
+      </a></li>
+
+  </ul>
+
+</div>
