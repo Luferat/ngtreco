@@ -19,3 +19,56 @@ body {
 body {
   background-color: bisque;
 }
+
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  line-height: 1.4;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+article,
+aside {
+  padding: 1rem;
+}
+
+article {
+  flex-grow: 1;
+}
+
+aside {
+  border-top: 1px dotted grey;
+  background-color: #eee;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+
+  aside {
+    min-width: 250px;
+    max-width: 250px;
+    border: none;
+    border-left: 1px dotted grey;
+  }
+}
