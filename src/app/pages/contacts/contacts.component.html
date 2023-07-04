@@ -11,21 +11,25 @@
       <p>
         <label for="name">Nome:</label>
         <input type="text" name="name" id="name" placeholder="Seu nome" formControlName="name">
+        <span class="error-message" *ngIf="formErrors.name">{{ formErrors.name }}</span>
       </p>
 
       <p>
         <label for="email">E-mail:</label>
         <input type="email" name="email" id="email" placeholder="Seu e-mail" formControlName="email">
+        <span class="error-message" *ngIf="formErrors.email">{{ formErrors.email }}</span>
       </p>
 
       <p>
         <label for="subject">Assunto:</label>
         <input type="text" name="subject" id="subject" placeholder="Assunto do contato" formControlName="subject">
+        <span class="error-message" *ngIf="formErrors.subject">{{ formErrors.subject }}</span>
       </p>
 
       <p>
         <label for="message">Mensagem:</label>
         <textarea name="message" id="message" placeholder="Seu contato" formControlName="message"></textarea>
+        <span class="error-message" *ngIf="formErrors.message">{{ formErrors.message }}</span>
       </p>
 
       <p>
